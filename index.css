@@ -10,7 +10,7 @@ body {
   width: 100vw;
   max-width: 100%;
   background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgb(150, 66, 228), rgb(0, 0, 0));
+  background: linear-gradient(180deg, rgb(115, 6, 216), rgb(6, 0, 8));
   font-family: Arial;
 }
 
@@ -65,7 +65,7 @@ nav {
 
 .logo:hover {
   font-size: 2.5rem;
-  background: -webkit-linear-gradient(rgb(231, 141, 240), rgb(128, 30, 148));
+  background: -webkit-linear-gradient(rgb(81, 4, 88), rgb(128, 30, 148));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
@@ -273,7 +273,8 @@ button {
 }
 
 button:hover {
-  background: rgb(50, 26, 61);
+  background: rgb(131, 66, 161);
+  color: rgb(34, 1, 43);
   height: 90px;
   width: 180px;
 }

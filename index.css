@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(150, 66, 228), rgb(0, 0, 0));
+  font-family: Arial;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.loading-page {
+  height: 100%;
+  width: 100%;
+  animation: dissapear 1s forwards ease;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  background: black;
+  position: absolute;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+.loading-page svg text {
+  display: block;
+  stroke: WHITE;
+  font-size: 5rem;
+  stroke-width: 3px;
+  animation: animar-texto 4s ease infinite alternate;
+  z-index: 1000;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  background: black;
+  box-shadow: 0px 0px 5px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Kanit", sans-serif;
+}
+
+.nav-list {
+  width: 80%;
+  color: white;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-family: "Kanit", sans-serif;
+}
+
+.nav-list ul li {
+  cursor: pointer;
+}
+
+.header-info {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-info-div {
+  height: 80%;
+  width: 80%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-info-div div {
+  height: 100%;
+  width: 50%;
+  color: white;
+  font-family: "Kanit", sans-serif;
+}
+
+.header-info-img {
+  background: url(./img/music-diskjok.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-grid-container {
+  height: 50%;
+}
+
+.button-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  height: 80px;
+  width: 160px;
+  background: none;
+  color: rgb(175, 124, 233);
+  border: 3px solid;
+  color: rgb(175, 124, 233);
+  cursor: pointer;
+  color: rgb(175, 124, 233);
+
+  font-family: "Kanit", sans-serif;
+  font-size: 1rem;
+  border-radius: 1000px;
+}
+
+@keyframes animar-texto {
+  0% {
+    stroke-dasharray: 0 50%;
+  }
+  100% {
+    stroke-dasharray: 50% 0;
+  }
+}
+
+@keyframes dissapear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-info-div {
+    flex-direction: column;
+  }
+}

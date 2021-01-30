@@ -62,6 +62,14 @@ nav {
   font-family: "Kanit", sans-serif;
 }
 
+.logo:hover {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(rgb(231, 141, 240), rgb(128, 30, 148));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
 .nav-list {
   width: 80%;
   color: white;
@@ -122,6 +130,10 @@ nav {
 .text-div {
   height: 50%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .music-div {
@@ -251,12 +263,9 @@ button {
   height: 80px;
   width: 160px;
   background: none;
-  color: rgb(175, 124, 233);
   border: 3px solid;
-  color: rgb(175, 124, 233);
+  color: rgb(113, 69, 150);
   cursor: pointer;
-  color: rgb(175, 124, 233);
-
   font-family: "Kanit", sans-serif;
   font-size: 1rem;
   border-radius: 1000px;
@@ -343,5 +352,20 @@ button {
 @media (max-width: 1000px) {
   .header-info-div {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-list {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-div {
+    font-size: 0.5rem;
   }
 }

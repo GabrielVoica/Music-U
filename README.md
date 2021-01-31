@@ -5,7 +5,7 @@
 
 Proyecto web que consiste en una página de música.
 
-La web estara conectada a la API de spotify para poder mostrar canciones al usuario.
+Tiene un reproductor de música con distintas canciones, ademas de animaciones hechas con css y el js canvas.
 
-#### La web tiene un diseño responsive
+
 

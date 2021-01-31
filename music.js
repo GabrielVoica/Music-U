@@ -116,4 +116,4 @@ initialSetup();
 setInterval(() => {
   progressBar.value = track.currentTime * 0.5;
   track.volume = volumeBar.value / 100;
-}, 50);
+}, 200);

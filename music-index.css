@@ -41,7 +41,6 @@ nav {
 }
 
 .logo:hover {
-  font-size: 2.5rem;
   background: -webkit-linear-gradient(rgb(81, 4, 88), rgb(128, 30, 148));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -102,6 +101,114 @@ img {
   animation-duration: 1s;
   animation-iteration-count: infinite;
   animation-direction: forwards;
+  overflow: hidden;
+  position: relative;
+}
+
+.music-note {
+  position: absolute;
+  bottom: -20;
+  color: rgba(172, 6, 223, 0.13);
+  height: 0;
+  opacity: 0;
+}
+
+.note-1 {
+  left: 5%;
+  transform: rotate(30deg);
+  animation: animate-note-one 8s forwards;
+  animation-iteration-count: infinite;
+}
+
+.note-2 {
+  left: 25%;
+  transform: rotate(20deg);
+  animation: animate-note-two 8s forwards;
+  animation-iteration-count: infinite;
+}
+
+.note-3 {
+  left: 46%;
+  transform: rotate(15deg);
+  animation: animate-note-three 8s forwards;
+  animation-iteration-count: infinite;
+}
+
+.note-4 {
+  left: 74%;
+  transform: rotate(7deg);
+  animation: animate-note-four 8s forwards;
+  animation-iteration-count: infinite;
+}
+
+.note-5 {
+  left: 50%;
+  transform: rotate(7deg);
+  animation-iteration-count: infinite;
+  animation: animate-note-five 8s forwards;
+}
+
+@keyframes animate-note-one {
+  0% {
+    bottom: -20%;
+    left: 62%;
+  }
+
+  50% {
+    left: 40%;
+  }
+  100% {
+    bottom: 120%;
+    left: 25%;
+  }
+}
+
+@keyframes animate-note-two {
+  0% {
+    bottom: -20%;
+    left: 25%;
+  }
+
+  100% {
+    bottom: 120%;
+    left: 40%;
+  }
+}
+
+@keyframes animate-note-three {
+  0% {
+    bottom: -20%;
+    left: 20%;
+  }
+
+  100% {
+    bottom: 120%;
+    left: -20%;
+  }
+}
+
+@keyframes animate-note-four {
+  0% {
+    bottom: -20%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 120%;
+    left: 130%;
+  }
+}
+
+@keyframes animate-note-five {
+  0% {
+    bottom: -20%;
+    left: 67%;
+  }
+
+  100% {
+    bottom: 120%;
+    left: 90%;
+  }
 }
 
 @keyframes player-animation {

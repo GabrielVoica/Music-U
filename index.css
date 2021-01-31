@@ -64,7 +64,6 @@ nav {
 }
 
 .logo:hover {
-  font-size: 2.5rem;
   background: -webkit-linear-gradient(rgb(81, 4, 88), rgb(128, 30, 148));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

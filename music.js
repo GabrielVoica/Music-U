@@ -14,7 +14,15 @@ let songPlaying = false;
 track.src = "./file_example_MP3_1MG.mp3";
 track.allow = "autoplay";
 
+const notesArray = document.querySelectorAll(".music-note");
+
 const songArray = [
+  {
+    src: "./songs/Babalos - Snow Crystal [HQ].mp3",
+    img: "./img/song5-img.jpg",
+    title: "Snow Crystal",
+    author: "Babalos",
+  },
   {
     src: "./songs/Monkey Warhol - Times of Your Life (Robot Mix).mp3",
     img: "./img/song4-img.jpg",
@@ -39,12 +47,6 @@ const songArray = [
     title: "Losing It",
     author: "Fisher",
   },
-  {
-    src: "./songs/Babalos - Snow Crystal [HQ].mp3",
-    img: "./img/song5-img.jpg",
-    title: "Snow Crystal",
-    author: "Babalos",
-  },
 ];
 
 let play = () => {
@@ -56,6 +58,9 @@ let pauseSong = () => {
   document.querySelector(".musicPlayer").style.animationName = "none";
   document.getElementById("canvas").style.display = "none";
   track.pause();
+  notesArray.forEach((note) => {
+    note.style.opacity = 0;
+  });
 };
 
 let initialSetup = () => {
@@ -72,6 +77,10 @@ let playSong = () => {
   document.querySelector(".musicPlayer").style.animationName =
     "player-animation";
   document.getElementById("canvas").style.display = "block";
+
+  notesArray.forEach((note) => {
+    note.style.opacity = 1;
+  });
 };
 
 let nextSong = () => {

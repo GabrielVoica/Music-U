@@ -64,10 +64,10 @@ let pauseSong = () => {
 };
 
 let initialSetup = () => {
-  track.src = songArray[currentSongIndex].src;
   songImg.src = songArray[currentSongIndex].img;
   songTitle.innerHTML = songArray[currentSongIndex].title;
   songAuthor.innerHTML = songArray[currentSongIndex].author;
+  track.src = songArray[currentSongIndex].src;
   progressBar.value = 0;
 };
 

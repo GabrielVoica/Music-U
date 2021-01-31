@@ -17,32 +17,32 @@ const notesArray = document.querySelectorAll(".music-note");
 
 const songArray = [
   {
-    src: "../../songs/Babalos - Snow Crystal [HQ].mp3",
-    img: "../../img/song5-img.jpg",
+    src: "./songs/Babalos - Snow Crystal [HQ].mp3",
+    img: "./img/song5-img.jpg",
     title: "Snow Crystal",
     author: "Babalos",
   },
   {
-    src: "../../songs/Monkey Warhol - Times of Your Life (Robot Mix).mp3",
-    img: "../../img/song4-img.jpg",
+    src: "./songs/Monkey Warhol - Times of Your Life (Robot Mix).mp3",
+    img: "./img/song4-img.jpg",
     title: "Monkey Warhol",
     author: "Candy Warhol",
   },
   {
-    src: "../../songs/Dom Dolla - Take It (Sonny Fodera Remix).mp3",
-    img: "../../img/song2-img.jpg",
+    src: "./songs/Dom Dolla - Take It (Sonny Fodera Remix).mp3",
+    img: "./img/song2-img.jpg",
     title: "Take It",
     author: "Dom Dolla",
   },
   {
-    src: "../../songs/Kalimba.mp3",
-    img: "../../img/song3-img.jpg",
+    src: "./songs/Kalimba.mp3",
+    img: "./img/song3-img.jpg",
     title: "Kalimba",
     author: "Kee Kun",
   },
   {
-    src: "../../songs/FISHER - Losing It.mp3",
-    img: "../../img/song1-img.jpg",
+    src: "./songs/FISHER - Losing It.mp3",
+    img: "./img/song1-img.jpg",
     title: "Losing It",
     author: "Fisher",
   },

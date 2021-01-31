@@ -11,39 +11,38 @@ let currentSongIndex = 0;
 
 let songPlaying = false;
 
-track.src = "./file_example_MP3_1MG.mp3";
 track.allow = "autoplay";
 
 const notesArray = document.querySelectorAll(".music-note");
 
 const songArray = [
   {
-    src: "./songs/Babalos - Snow Crystal [HQ].mp3",
-    img: "./img/song5-img.jpg",
+    src: "../../songs/Babalos - Snow Crystal [HQ].mp3",
+    img: "../../img/song5-img.jpg",
     title: "Snow Crystal",
     author: "Babalos",
   },
   {
-    src: "./songs/Monkey Warhol - Times of Your Life (Robot Mix).mp3",
-    img: "./img/song4-img.jpg",
+    src: "../../songs/Monkey Warhol - Times of Your Life (Robot Mix).mp3",
+    img: "../../img/song4-img.jpg",
     title: "Monkey Warhol",
     author: "Candy Warhol",
   },
   {
-    src: "./songs/Dom Dolla - Take It (Sonny Fodera Remix).mp3",
-    img: "./img/song2-img.jpg",
+    src: "../../songs/Dom Dolla - Take It (Sonny Fodera Remix).mp3",
+    img: "../../img/song2-img.jpg",
     title: "Take It",
     author: "Dom Dolla",
   },
   {
-    src: "./songs/Kalimba.mp3",
-    img: "./img/song3-img.jpg",
+    src: "../../songs/Kalimba.mp3",
+    img: "../../img/song3-img.jpg",
     title: "Kalimba",
     author: "Kee Kun",
   },
   {
-    src: "./songs/FISHER - Losing It.mp3",
-    img: "./img/song1-img.jpg",
+    src: "../../songs/FISHER - Losing It.mp3",
+    img: "../../img/song1-img.jpg",
     title: "Losing It",
     author: "Fisher",
   },
@@ -67,8 +66,8 @@ let initialSetup = () => {
   songImg.src = songArray[currentSongIndex].img;
   songTitle.innerHTML = songArray[currentSongIndex].title;
   songAuthor.innerHTML = songArray[currentSongIndex].author;
-  track.src = songArray[currentSongIndex].src;
   progressBar.value = 0;
+  track.src = songArray[currentSongIndex].src;
 };
 
 let playSong = () => {
@@ -86,10 +85,8 @@ let playSong = () => {
 let nextSong = () => {
   if (currentSongIndex >= songArray.length - 1) {
     currentSongIndex = 0;
-    console.log(currentSongIndex);
   } else if (currentSongIndex < songArray.length - 1) {
     currentSongIndex++;
-    console.log(currentSongIndex);
   }
 
   playSong();

@@ -108,7 +108,7 @@ img {
 .music-note {
   position: absolute;
   bottom: -20;
-  color: rgba(172, 6, 223, 0.13);
+  color: rgba(206, 88, 241, 0.062);
   height: 0;
   opacity: 0;
 }
@@ -116,28 +116,28 @@ img {
 .note-1 {
   left: 5%;
   transform: rotate(30deg);
-  animation: animate-note-one 8s forwards;
+  animation: animate-note-one 6s forwards;
   animation-iteration-count: infinite;
 }
 
 .note-2 {
   left: 25%;
   transform: rotate(20deg);
-  animation: animate-note-two 8s forwards;
+  animation: animate-note-two 12s forwards;
   animation-iteration-count: infinite;
 }
 
 .note-3 {
   left: 46%;
   transform: rotate(15deg);
-  animation: animate-note-three 8s forwards;
+  animation: animate-note-three 17s forwards;
   animation-iteration-count: infinite;
 }
 
 .note-4 {
   left: 74%;
   transform: rotate(7deg);
-  animation: animate-note-four 8s forwards;
+  animation: animate-note-four 20s forwards;
   animation-iteration-count: infinite;
 }
 
@@ -145,7 +145,7 @@ img {
   left: 50%;
   transform: rotate(7deg);
   animation-iteration-count: infinite;
-  animation: animate-note-five 8s forwards;
+  animation: animate-note-five 10s forwards;
 }
 
 @keyframes animate-note-one {
@@ -156,6 +156,7 @@ img {
 
   50% {
     left: 40%;
+    transform: rotate(40deg);
   }
   100% {
     bottom: 120%;

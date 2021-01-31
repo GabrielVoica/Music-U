@@ -106,14 +106,19 @@ img {
 
 @keyframes player-animation {
   0% {
-    box-shadow: 0px 0px 5px 5px rgba(168, 20, 209, 0.534),
-      0 0px 30px 30px #1403ff6c;
+    box-shadow: 0px 0px 10px 10px rgba(181, 5, 230, 0.534);
+  }
+  25% {
+    box-shadow: 0 0px 20px 20px #05ff50;
   }
   50% {
-    box-shadow: 0px 0px 20px 20px rgba(2, 255, 65, 0.26), 0 0px 5px 5px #02b2f8;
+    box-shadow: 0 0px 25px 25px #1302ff6b;
+  }
+  75% {
+    box-shadow: 0 0px 20px 20px #ff002bfd;
   }
   100% {
-    box-shadow: 0px 0px 5px 5px rgb(49, 235, 80), 0 0px 10px 10px #0e00cc6b;
+    box-shadow: 0 0px 10px 10px rgba(200, 1, 255, 0.534);
   }
 }
 

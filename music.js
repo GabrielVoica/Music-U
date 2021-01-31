@@ -80,6 +80,15 @@ let nextSong = () => {
   playSong();
 };
 
+let previousSong = () => {
+  if (currentSongIndex == 0) {
+    currentSongIndex = 3;
+  } else if (currentSongIndex > 0) {
+    currentSongIndex--;
+  }
+  playSong();
+};
+
 let changeVolume = () => {
   track.volume = volumeBar.value / 10;
   console.log(track.volume);

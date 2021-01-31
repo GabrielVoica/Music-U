@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="music-index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  </head>
+  <body id="body">
+    <nav>
+      <div class="logo"><a href="index.html">MUSIC.U</a></div>
+      <div class="nav-list">
+        <ul></ul>
+      </div>
+    </nav>
+
+    <canvas id="canvas">
+
+    </canvas>
+
+    <main>
+        <div class="musicPlayer">
+            <img src="https://via.placeholder.com/500" id="song-img" height="300px" width="300px"class="music-img" alt="song-img">
+            <div class="song-info">
+            <h1 class="song-title" id="song-title">My river down</h1>
+            <h3 class="song-singer" id="song-author">Bruce Lee</h3>
+            </div>
+            <div class="button-div">
+            <button onClick="playSong()"><i class="fas fa-play"></i></button>
+            <button onClick="pauseSong()"><i class="fas fa-pause"></i></button>
+            <button onClick="nextSong()"><i class="fa fa-angle-double-right"></i></button>
+            </div>
+
+            <div  class="volume">
+                <div class="volume-bar"><input id="volume-bar" class="volume-setter" type="range"></div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+
+            <div  class="progress-bar"><input   id="song-bar" class="song-progress" type="range" disabled></div>
+            
+        </div>
+    </main>
+
+    <audio id="audioPlayer" onended="nextSong()"></audio>
+
+   
+
+    <script src="music.js"></script>
+    <script src="canvas.js"></script>
+  </body>
+</html>

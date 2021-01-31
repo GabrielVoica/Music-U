@@ -22,10 +22,10 @@ const songArray = [
     author: "Candy Warhol",
   },
   {
-    src: "./songs/file_example_MP3_1MG.mp3",
+    src: "./songs/Dom Dolla - Take It (Sonny Fodera Remix).mp3",
     img: "./img/song2-img.jpg",
-    title: "Crud lif",
-    author: "Persist",
+    title: "Take It",
+    author: "Dom Dolla",
   },
   {
     src: "./songs/Kalimba.mp3",
@@ -34,10 +34,16 @@ const songArray = [
     author: "Kee Kun",
   },
   {
-    src: "./songs/CP07_Rudess_Morgenstein_Excerpts.mp3",
+    src: "./songs/FISHER - Losing It.mp3",
     img: "./img/song1-img.jpg",
-    title: "Morgenstein",
-    author: "Morgan Lee",
+    title: "Losing It",
+    author: "Fisher",
+  },
+  {
+    src: "./songs/Babalos - Snow Crystal [HQ].mp3",
+    img: "./img/song5-img.jpg",
+    title: "Snow Crystal",
+    author: "Babalos",
   },
 ];
 
@@ -69,10 +75,10 @@ let playSong = () => {
 };
 
 let nextSong = () => {
-  if (currentSongIndex >= 3) {
+  if (currentSongIndex >= songArray.length - 1) {
     currentSongIndex = 0;
     console.log(currentSongIndex);
-  } else if (currentSongIndex < 3) {
+  } else if (currentSongIndex < songArray.length - 1) {
     currentSongIndex++;
     console.log(currentSongIndex);
   }
@@ -82,9 +88,11 @@ let nextSong = () => {
 
 let previousSong = () => {
   if (currentSongIndex == 0) {
-    currentSongIndex = 3;
+    currentSongIndex = songArray.length - 1;
+    console.log(currentSongIndex);
   } else if (currentSongIndex > 0) {
     currentSongIndex--;
+    console.log(currentSongIndex);
   }
   playSong();
 };
@@ -97,6 +105,6 @@ let changeVolume = () => {
 initialSetup();
 
 setInterval(() => {
-  progressBar.value = track.currentTime * 0.8;
+  progressBar.value = track.currentTime * 0.5;
   track.volume = volumeBar.value / 100;
 }, 50);

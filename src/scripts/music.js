@@ -23,10 +23,10 @@ const songArray = [
     author: "Babalos",
   },
   {
-    src: "./songs/Monkey Warhol - Times of Your Life (Robot Mix).mp3",
+    src: "./songs/SanFrancisco.mp3",
     img: "./img/song4-img.jpg",
-    title: "Monkey Warhol",
-    author: "Candy Warhol",
+    title: "San Francisco",
+    author: "Dom Dolla",
   },
   {
     src: "./songs/Dom Dolla - Take It (Sonny Fodera Remix).mp3",
@@ -35,15 +35,21 @@ const songArray = [
     author: "Dom Dolla",
   },
   {
-    src: "./songs/Kalimba.mp3",
+    src: "./songs/Animals.mp3",
     img: "./img/song3-img.jpg",
-    title: "Kalimba",
-    author: "Kee Kun",
+    title: "Animals",
+    author: "God",
   },
   {
     src: "./songs/FISHER - Losing It.mp3",
     img: "./img/song1-img.jpg",
     title: "Losing It",
+    author: "Fisher",
+  },
+  {
+    src: "./songs/StopIt.mp3",
+    img: "./img/stopit.jpg",
+    title: "Stop It",
     author: "Fisher",
   },
 ];

@@ -1,6 +1,7 @@
 # Music.U
 
-Music.U es un reproductor de música web
+Music.U es un reproductor de música web creado proncipalmente con HTML y CSS sin el uso de
+ningún framework.
 
 
 ## Contribuciones

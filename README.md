@@ -1,8 +1,11 @@
-# Music-U
+# Music.U
+
+Music.U es un reproductor de música web
 
 
-Proyecto web que consiste en un reproductor de música.
+## Contribuciones
 
+Se puede contribuir al proyecto ya que este esta abierto a pull requests.
 
-
-
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

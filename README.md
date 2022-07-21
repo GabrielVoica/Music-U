@@ -1,6 +1,6 @@
 # Music.U
 
-Music.U es un reproductor de música web creado proncipalmente con HTML y CSS sin el uso de
-ningún framework.
+Personal online music player.
 
-[MIT](https://choosealicense.com/licenses/mit/)
+(This was my first small project when i started learning web development)
+
